@@ -23,6 +23,23 @@ class Person(ABC):
 `Code style` **Underscores in Numeric Literals**
 
 ```python
-print(10000)
 print(10_000)
+```
+
+instead of
+
+```python
+print(10000)
+```
+
+---
+
+`Snippet` **Prettyprinter for Dictionaries**
+
+```python
+def print_dict(d: dict, indent: int = 2) -> None:
+    from json import dumps
+
+    print(dumps(d, indent=indent))
+
 ```

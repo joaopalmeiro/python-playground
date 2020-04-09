@@ -11,11 +11,11 @@ class color:
 
 class TotalBillMixin:
     def total_bill(self):
-        divider = "-" * len(self._slices)
+        divider = "-" * len(self.slices)
         total_price = 0
         bill = ""
 
-        for s in self._slices:
+        for s in self.slices:
             total_price += s.bill(self)[1]
             bill += f"{s.bill(self)[0]} €{s.bill(self)[1]}\n"
 
@@ -40,7 +40,7 @@ class Slice(Item):
 class Pizza(Slice, TotalBillMixin):
     def __init__(self, n_slices):
         super().__init__("Slice of Pizza", "\U0001F355", 2)
-        self._slices = [Slice] * n_slices
+        self.slices = [Slice] * n_slices
 
 
 pizza = Pizza(6)
