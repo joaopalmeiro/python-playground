@@ -43,3 +43,17 @@ def print_dict(d: dict, indent: int = 2) -> None:
     print(dumps(d, indent=indent))
 
 ```
+
+---
+
+`Snippet` **Main Function**
+
+```python
+def main():
+    # Entry point function.
+    # Orchestrate the call to other functions here.
+    pass
+
+if __name__ == "__main__":
+    main()
+```
