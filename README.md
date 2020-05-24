@@ -57,3 +57,14 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+---
+
+`Snippet` **List Flattening**
+
+```python
+from itertools import chain
+
+lst = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+flat_lst = list(chain.from_iterable(lst))
+```
