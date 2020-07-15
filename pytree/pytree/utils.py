@@ -1,8 +1,9 @@
 import platform
+from shutil import get_terminal_size
 import os
 
 
-def get_indentation(depth, spaces=4):
+def get_indentation(depth, spaces=3):
     return " " * spaces * (depth)
 
 
@@ -13,3 +14,6 @@ def clean_terminal():
         os.system("clear")
     elif os_name == "Windows":
         os.system("cls")
+    else:
+        print("\n" * get_terminal_size().lines, end="")
+
