@@ -15,12 +15,14 @@ def main():
     for dirpath, _, filenames in os.walk(cwd):
         depth = dirpath.replace(cwd, "", 1).count(os.sep)
 
-        indentation = get_indentation(depth)
-        inner_indentation = get_indentation(depth)
+        indentation = get_indentation(depth, True)
+        inner_indentation = get_indentation(depth, False)
 
         bname = os.path.basename(dirpath)
 
-        print(f"{indentation}{bname}")
+        indentation_line = THREE_PARTS if depth > 0 else ""
+
+        print(f"{indentation}{indentation_line}{bname}")
 
         for fn in filenames:
             print(f"{inner_indentation}{fn}")

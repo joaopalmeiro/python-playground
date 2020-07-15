@@ -3,7 +3,8 @@ from shutil import get_terminal_size
 import os
 
 
-def get_indentation(depth, spaces=3):
+def get_indentation(depth, is_dir, spaces=3):
+    depth = depth if (depth == 0 or not is_dir) else depth - 1
     return " " * spaces * (depth)
 
 
