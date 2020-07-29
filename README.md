@@ -76,3 +76,17 @@ flat_lst = list(chain.from_iterable(lst))
 ```python
 import pdb; pdb.set_trace()
 ```
+
+---
+
+`Snippet` **`frozenset` (immutable and hashable built-in set type)**
+
+```python
+d = dict()
+x = [1, 2, 3]
+
+fs = frozenset(x)
+
+# It can be used as a dictionary key
+d[fs] = 1
+```
