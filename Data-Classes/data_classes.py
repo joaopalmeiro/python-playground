@@ -17,7 +17,7 @@ class ClassCard:
         self.suit = suit
 
     def __repr__(self) -> str:
-        return f"{self.__class__.__name__}(rank={self.rank!r}, suit={self.suit!r})"  # `!r`-> `repr()`
+        return f"{self.__class__.__name__}(rank={self.rank!r}, suit={self.suit!r})"  # `!r` -> `repr()`
 
     def __eq__(self, other: Any) -> bool:
         if other.__class__ is not self.__class__:
