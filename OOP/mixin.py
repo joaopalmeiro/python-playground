@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-from abc import ABC, abstractmethod
+from abc import ABC
 
 
 class color:

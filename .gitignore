@@ -128,9 +128,4 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-.vscode/
-pytree/tree.txt
-pytree/pytree/tree.txt
-pytree/pytree copy/tree.txt
-pytree copy/
 formatter.py

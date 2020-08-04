@@ -1,6 +1,7 @@
+from re import sub
+
 import pandas as pd
 from pandas.api.extensions import register_dataframe_accessor
-from re import sub
 
 TO_NORMALIZE = [(r"[ ()]", "_")]
 
