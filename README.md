@@ -90,3 +90,12 @@ fs = frozenset(x)
 # It can be used as a dictionary key
 d[fs] = 1
 ```
+
+---
+
+`Snippet` **Empty Class**
+
+```python
+class Name:
+    pass
+```
