@@ -4,7 +4,7 @@ Some experiments with [Python](https://www.python.org/).
 
 ## Notes
 
-`Snippet` **Abstract Base Class**
+`Snippet` **Abstract base class**
 
 ```python
 from abc import ABC, abstractmethod
@@ -20,7 +20,7 @@ class Person(ABC):
 
 ---
 
-`Code style` **Underscores in Numeric Literals**
+`Code style` **Underscores in numeric literals**
 
 ```python
 print(10_000)
@@ -34,7 +34,7 @@ print(10000)
 
 ---
 
-`Snippet` **Prettyprinter for Dictionaries**
+`Snippet` **Prettyprinter for dictionaries**
 
 ```python
 def print_dict(d: dict, indent: int = 2) -> None:
@@ -46,7 +46,7 @@ def print_dict(d: dict, indent: int = 2) -> None:
 
 ---
 
-`Snippet` **Main Function**
+`Snippet` **Main function**
 
 ```python
 def main():
@@ -60,7 +60,7 @@ if __name__ == "__main__":
 
 ---
 
-`Snippet` **List Flattening**
+`Snippet` **List flattening**
 
 ```python
 from itertools import chain
@@ -93,9 +93,25 @@ d[fs] = 1
 
 ---
 
-`Snippet` **Empty Class**
+`Snippet` **Empty class**
 
 ```python
 class Name:
     pass
+```
+
+---
+
+`Code style` **Variable names for minimum and maximum values**
+
+```python
+data = [1, 2, 3, 4]
+
+# Minimum
+mn = min(data)
+min_ = min(data)
+
+# Maximum
+mx = max(data)
+max_ = max(data)
 ```
