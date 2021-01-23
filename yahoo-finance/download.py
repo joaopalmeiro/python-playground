@@ -39,7 +39,9 @@ def get_historical_prices(
     return data.json()
 
 
-def parse_historical_prices(data: Dict[str, Any]) -> pd.DataFrame:
+def parse_historical_prices(
+    data: Dict[str, Any], rounding: bool = True
+) -> pd.DataFrame:
     data_to_parse = data["chart"]["result"][0]
 
     timestamps = data_to_parse["timestamp"]
@@ -53,7 +55,7 @@ def parse_historical_prices(data: Dict[str, Any]) -> pd.DataFrame:
 
     adjcloses = data_to_parse["indicators"]["adjclose"][0]["adjclose"]
 
-    data = pd.DataFrame(
+    parsed_data = pd.DataFrame(
         {
             "date": pd.to_datetime(timestamps, origin="unix", unit="s"),
             "open": opens,
@@ -65,13 +67,17 @@ def parse_historical_prices(data: Dict[str, Any]) -> pd.DataFrame:
         }
     )
 
-    return data
+    if rounding:
+        decimals = data_to_parse["meta"]["priceHint"]
+        cols = ["open", "high", "low", "close", "adj_close"]
+
+        parsed_data[cols] = parsed_data[cols].round(decimals)
+
+    return parsed_data
 
 
 if __name__ == "__main__":
-    raw_data = get_historical_prices(
-        "MSFT", start="2019-04-15", end="2019-04-17", verbose=True
-    )
+    raw_data = get_historical_prices("MSFT", start="2019-04-15", end="2019-04-17")
 
     data = parse_historical_prices(raw_data)
 
