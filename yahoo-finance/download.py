@@ -34,16 +34,45 @@ def get_historical_prices(
     data = requests.get(url=url, params=params)
 
     if verbose:
-        print("URL:", data.url)
+        print(f"URL: {data.url}\n")
 
     return data.json()
 
 
 def parse_historical_prices(data: Dict[str, Any]) -> pd.DataFrame:
-    pass
+    data_to_parse = data["chart"]["result"][0]
+
+    timestamps = data_to_parse["timestamp"]
+    ohlc = data_to_parse["indicators"]["quote"][0]  # OHLC: open-high-low-close
+
+    opens = ohlc["open"]
+    lows = ohlc["low"]
+    highs = ohlc["high"]
+    volumes = ohlc["volume"]
+    closes = ohlc["close"]
+
+    adjcloses = data_to_parse["indicators"]["adjclose"][0]["adjclose"]
+
+    data = pd.DataFrame(
+        {
+            "date": pd.to_datetime(timestamps, origin="unix", unit="s"),
+            "open": opens,
+            "high": highs,
+            "low": lows,
+            "close": closes,
+            "adj_close": adjcloses,
+            "volume": volumes,
+        }
+    )
+
+    return data
 
 
 if __name__ == "__main__":
     raw_data = get_historical_prices(
         "MSFT", start="2019-04-15", end="2019-04-17", verbose=True
     )
+
+    data = parse_historical_prices(raw_data)
+
+    print(data)
