@@ -1,9 +1,14 @@
+import json
 import time
 from typing import Dict, Union
 
 import requests
 
 BASE_URL = "https://query1.finance.yahoo.com/v8/finance/chart/"
+
+
+def jprint(obj, indent=4, ensure_ascii=False):
+    print(json.dumps(obj, indent=indent, ensure_ascii=ensure_ascii))
 
 
 def historical_prices(
@@ -30,4 +35,4 @@ def historical_prices(
 
 
 if __name__ == "__main__":
-    print(historical_prices("EDP.LS", start="2021-01-19", end="2021-01-22"))
+    jprint(historical_prices("MSFT", start="2019-04-15", end="2019-04-17"))
