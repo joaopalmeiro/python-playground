@@ -45,6 +45,7 @@ def parse_historical_prices(
     data_to_parse = data["chart"]["result"][0]
 
     timestamps = data_to_parse["timestamp"]
+    symbol = data_to_parse["meta"]["symbol"]
     ohlc = data_to_parse["indicators"]["quote"][0]  # OHLC: open-high-low-close
 
     opens = ohlc["open"]
@@ -57,7 +58,8 @@ def parse_historical_prices(
 
     parsed_data = pd.DataFrame(
         {
-            "date": pd.to_datetime(timestamps, origin="unix", unit="s"),
+            "symbol": symbol,
+            "date": pd.to_datetime(timestamps, origin="unix", unit="s").normalize(),
             "open": opens,
             "high": highs,
             "low": lows,
