@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 requests = "*"
 pandas = "*"
+beautifulsoup4 = "*"
+html5lib = "*"
+selenium = "*"
 
 [dev-packages]
 

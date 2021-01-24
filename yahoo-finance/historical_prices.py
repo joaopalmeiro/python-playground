@@ -1,6 +1,6 @@
 import json
 import time
-from typing import Any, Dict, Union
+from typing import Any, Dict, List, Sequence, Union
 
 import pandas as pd
 import requests
@@ -81,9 +81,31 @@ def parse_historical_prices(
     return parsed_data
 
 
-if __name__ == "__main__":
-    raw_data = get_historical_prices("MSFT", start="2019-04-15", end="2019-04-17")
+def get_dataset(
+    symbols: Union[str, Sequence[str]],
+    start: str = "2010-01-01",
+    end: str = "2021-01-01",
+    date_fmt: str = "%Y-%m-%d",
+    granularity: str = "1d",
+    verbose: bool = False,
+    rounding: bool = True,
+) -> pd.DataFrame:
+    symbols = [symbols] if isinstance(symbols, str) else symbols
 
-    data = parse_historical_prices(raw_data)
+    all_data: List[pd.DataFrame] = []
 
-    print(data)
+    for symbol in symbols:
+        raw_data = get_historical_prices(
+            symbol,
+            start=start,
+            end=end,
+            date_fmt=date_fmt,
+            granularity=granularity,
+            verbose=verbose,
+        )
+
+        data = parse_historical_prices(raw_data, rounding=rounding)
+
+        all_data.append(data)
+
+    return pd.concat(all_data).reset_index(drop=True)
