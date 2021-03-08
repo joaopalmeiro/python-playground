@@ -16,6 +16,15 @@ This folder contains the code for the "[Hypermodern Python](https://cjolowicz.gi
 - The caret (`^`) in front of a version number means "up to the next major release".
 - "Use snake case for the package name `hypermodern_python`, as opposed to the kebab case used for the repository name `hypermodern-python`. (...) name the package after your repository, replacing hyphens by underscores."
 - The `poetry.lock` file contains the exact versions installed into the virtual environment.
+- `poetry run pytest` or `poetry run pytest --cov`.
+- [Coverage.py](https://coverage.readthedocs.io/):
+  - `poetry add --dev "coverage[toml]" pytest-cov` (with support for `pyproject.toml` files enabled).
+- [Nox](https://nox.thea.codes/):
+  - `pip install --user --upgrade nox`.
+  - [tox](https://tox.readthedocs.io/).
+  - "Poetry is not a part of the environment created by Nox, so we specify `external` to avoid warnings about external commands leaking into the isolated test environments."
+  - Run: `nox` or `python -m nox`.
+  - `--reuse-existing-virtualenvs` or `-r` option.
 
 ## References
 
