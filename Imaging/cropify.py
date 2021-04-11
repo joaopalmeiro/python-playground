@@ -25,7 +25,7 @@ def crop_max_square(img: Image.Image) -> Image.Image:
     return crop_center(img, size, size)
 
 
-def main():
+def main() -> None:
     img = Image.open("joao.jpg")
     cropped_img = crop_max_square(img)
     cropped_img.save("squared_joao.jpg", quality=95)
