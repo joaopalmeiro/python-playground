@@ -26,9 +26,9 @@ def crop_max_square(img: Image.Image) -> Image.Image:
 
 
 def main():
-    img = Image.open("")
+    img = Image.open("joao.jpg")
     cropped_img = crop_max_square(img)
-    cropped_img.save("", quality=95)
+    cropped_img.save("squared_joao.jpg", quality=95)
 
 
 if __name__ == "__main__":
