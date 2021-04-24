@@ -18,6 +18,7 @@
   - `with redirect_stdout(sys.stderr):`: redirect output to standard error.
 - `from distutils.version import StrictVersion`: compare version numbers (e.g., `StrictVersion('0.10.1') < StrictVersion('1.0.3')`).
 - `inspect.cleandoc(doc)`: clean up indentation from docstrings.
+- `from bisect import insort`: insert items in a list in sorted order.
 
 ## Packages
 
