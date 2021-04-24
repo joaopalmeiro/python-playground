@@ -4,6 +4,8 @@ Some experiments with [Python](https://www.python.org/).
 
 ## Notes
 
+- [readme.so](https://readme.so/) (online editor to create README files).
+
 `Snippet` **Abstract base class**
 
 ```python
