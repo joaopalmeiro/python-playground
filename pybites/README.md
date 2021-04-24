@@ -19,6 +19,7 @@
 - `from distutils.version import StrictVersion`: compare version numbers (e.g., `StrictVersion('0.10.1') < StrictVersion('1.0.3')`).
 - `inspect.cleandoc(doc)`: clean up indentation from docstrings.
 - `from bisect import insort`: insert items in a list in sorted order.
+- `?` after the qualifier (e.g., `*?`) makes it perform the match in _non-greedy_ or _minimal_ fashion.
 
 ## Packages
 
