@@ -7,5 +7,20 @@
 - `sorted(string_iterable, key=str.lower)`.
 - `==` (same content/value) vs. `is` (same object).
 - `id()` can be used to check if different variables refer to the same object.
-- [TextBlob](https://textblob.readthedocs.io/en/dev/) (a package for text processing and NLP).
 - `.__mro__` (get an object's inheritance tree).
+- When using `in` against a `list`, all items are checked sequentially (slower). Against a `set`, a hashable type, lookups are faster.
+- `with open("hello", "x") as f:`: the `"x"` mode is for exclusive creation, failing if the file already exists.
+- Strip punctuation: `from string import punctuation` + `table = str.maketrans({key: None for key in punctuation})` + `my_string.translate(table)`.
+- `from pprint import pprint as pp`.
+- `collections.ChainMap`: group multiple dictionaries/mappings. It allows you to create a precedence chain, where the first argument takes precedence over the second and so on (e.g., `ChainMap(cli_args, os.environ, defaults)`).
+- `from contextlib import redirect_stdout`:
+  - Context manager for redirecting standard output.
+  - `with redirect_stdout(sys.stderr):`: redirect output to standard error.
+- `from distutils.version import StrictVersion`: compare version numbers (e.g., `StrictVersion('0.10.1') < StrictVersion('1.0.3')`).
+- `inspect.cleandoc(doc)`: clean up indentation from docstrings.
+
+## Packages
+
+- [TextBlob](https://textblob.readthedocs.io/en/dev/) (a package for text processing and NLP).
+- [requests-cache](https://requests-cache.readthedocs.io/en/latest/index.html) (a package for caching API calls).
+- [packaging](https://packaging.pypa.io/en/latest/) (a package with core utilities for Python packages).
