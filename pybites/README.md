@@ -25,6 +25,7 @@
 - `Path.glob`.
 - `str.casefold`: similar to `str.lower` and intended to remove all case distinctions in a string.
 - `with open("f1.txt") as f1, open("f2.txt") as f2:`: open two files.
+- It is possible to round to the next 10, 100, 1000 and so on by defining a negative `ndigits` argument for the `round()` function.
 
 ## Packages
 
