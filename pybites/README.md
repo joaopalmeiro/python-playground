@@ -24,6 +24,7 @@
 - `python -m json.tool <file>.json`: CLI to validate and pretty-print JSON objects.
 - `Path.glob`.
 - `str.casefold`: similar to `str.lower` and intended to remove all case distinctions in a string.
+- `with open("f1.txt") as f1, open("f2.txt") as f2:`: open two files.
 
 ## Packages
 
