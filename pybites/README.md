@@ -20,9 +20,17 @@
 - `inspect.cleandoc(doc)`: clean up indentation from docstrings.
 - `from bisect import insort`: insert items in a list in sorted order.
 - `?` after the qualifier (e.g., `*?`) makes it perform the match in _non-greedy_ or _minimal_ fashion.
+- `p help(...)`: call `help()` inside [pdb](https://docs.python.org/3/library/pdb.html).
+- `python -m json.tool <file>.json`: CLI to validate and pretty-print JSON objects.
+- `Path.glob`.
+- `str.casefold`: similar to `str.lower` and intended to remove all case distinctions in a string.
 
 ## Packages
 
 - [TextBlob](https://textblob.readthedocs.io/en/dev/) (a package for text processing and NLP).
 - [requests-cache](https://requests-cache.readthedocs.io/en/latest/index.html) (a package for caching API calls).
 - [packaging](https://packaging.pypa.io/en/latest/) (a package with core utilities for Python packages).
+- [imageio](https://imageio.github.io/) (a package for reading and writing image data).
+- [Python-Markdown](https://python-markdown.github.io/).
+- [howdoi](https://github.com/gleitz/howdoi) (a CLI to get answers from Stack Overflow).
+- [ipykernel](https://ipykernel.readthedocs.io/en/latest/) (it allows the installation of a dedicated kernel for a virtual environment).
