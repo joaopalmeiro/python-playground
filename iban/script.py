@@ -25,6 +25,7 @@ def format_pt_iban(
         nib = (
             f"{national_bank_code}{branch_code}{account_number}{national_check_digits}"
         )
+
         return f"{country_code}{iban_check_digits}{nib}"
     elif format == "print":
         account_number = " ".join(wrap(account_number, 4))
@@ -37,6 +38,7 @@ def format_pt_iban(
         return f"{country_code}{iban_check_digits} {nib}"
     elif format == "structure":
         nib = f"{national_bank_code} {branch_code} {account_number} {national_check_digits}"
+
         return f"{country_code}{iban_check_digits} {nib}"
     else:
         raise ValueError(f"{repr(format)} is not supported.")
