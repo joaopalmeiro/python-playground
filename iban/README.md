@@ -12,3 +12,7 @@
 - [Authorised institutions](https://www.bportugal.pt/en/entidades-autorizadas) (List of IBAN) document by Banco de Portugal.
 - [International Bank Account Number](https://en.wikipedia.org/wiki/International_Bank_Account_Number) Wikipedia page.
 - [iban-generator](https://github.com/lkraider/iban-generator) script.
+
+## Notes
+
+- [schwifty](https://schwifty.readthedocs.io/en/latest/) package.
