@@ -7,4 +7,6 @@
 
 ## Notes
 
-- `python script.py`.
+- `python cli.py FILENAME`.
+- [Python Fire](https://google.github.io/python-fire/) documentation.
+- [bat](https://github.com/sharkdp/bat): alternative to `cat`.

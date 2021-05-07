@@ -3,6 +3,7 @@ from pathlib import Path
 from typing import Dict, List, Sequence, Union
 from urllib.parse import urlparse
 
+import fire
 from ghapi.all import GhApi
 
 
@@ -25,11 +26,11 @@ def parse_urls(urls: Sequence[str]) -> List[Dict[str, str]]:
     return repos
 
 
-if __name__ == "__main__":
+def prepare_data(filename: str) -> None:
     api = GhApi()
 
-    url_file = Path("urls") / "python_dv.txt"
-    output_file = Path("repos") / "python_dv.json"
+    url_file = Path("urls") / filename
+    output_file = Path("repos") / f"{url_file.stem}.json"
 
     urls = read_txt(url_file)
     repos = parse_urls(urls)
@@ -52,3 +53,11 @@ if __name__ == "__main__":
 
     with open(output_file, "w", encoding="utf-8") as file:
         json.dump(repos_and_topics, file, ensure_ascii=False, indent=2)
+
+
+def main() -> None:
+    fire.Fire(prepare_data)
+
+
+if __name__ == "__main__":
+    main()

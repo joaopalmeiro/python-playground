@@ -1,0 +1,161 @@
+[
+  {
+    "owner": "pallets",
+    "repo": "click",
+    "topics": [
+      "python",
+      "cli",
+      "click",
+      "pallets"
+    ]
+  },
+  {
+    "owner": "tiangolo",
+    "repo": "typer",
+    "topics": [
+      "cli",
+      "click",
+      "python3",
+      "typehints",
+      "terminal",
+      "shell",
+      "python",
+      "typer"
+    ]
+  },
+  {
+    "owner": "google",
+    "repo": "python-fire",
+    "topics": [
+      "python",
+      "cli"
+    ]
+  },
+  {
+    "owner": "ialbert",
+    "repo": "plac",
+    "topics": []
+  },
+  {
+    "owner": "docopt",
+    "repo": "docopt",
+    "topics": []
+  },
+  {
+    "owner": "click-contrib",
+    "repo": "click-option-group",
+    "topics": [
+      "click",
+      "click-contrib",
+      "python",
+      "python-click",
+      "cli",
+      "python-cli"
+    ]
+  },
+  {
+    "owner": "click-contrib",
+    "repo": "click-completion",
+    "topics": []
+  },
+  {
+    "owner": "click-contrib",
+    "repo": "sphinx-click",
+    "topics": [
+      "sphinx",
+      "sphinx-plugin",
+      "click",
+      "cli"
+    ]
+  },
+  {
+    "owner": "click-contrib",
+    "repo": "click-repl",
+    "topics": []
+  },
+  {
+    "owner": "click-contrib",
+    "repo": "click-man",
+    "topics": []
+  },
+  {
+    "owner": "click-contrib",
+    "repo": "click-spinner",
+    "topics": []
+  },
+  {
+    "owner": "click-contrib",
+    "repo": "asyncclick",
+    "topics": [
+      "trio",
+      "python",
+      "cli"
+    ]
+  },
+  {
+    "owner": "click-contrib",
+    "repo": "click-log",
+    "topics": []
+  },
+  {
+    "owner": "click-contrib",
+    "repo": "click-help-colors",
+    "topics": [
+      "python-click",
+      "click",
+      "cli",
+      "python"
+    ]
+  },
+  {
+    "owner": "click-contrib",
+    "repo": "click-didyoumean",
+    "topics": [
+      "click",
+      "didyoumean",
+      "levenshtein-distance",
+      "plugin",
+      "cli",
+      "console"
+    ]
+  },
+  {
+    "owner": "click-contrib",
+    "repo": "click_params",
+    "topics": [
+      "click",
+      "python",
+      "validators"
+    ]
+  },
+  {
+    "owner": "click-contrib",
+    "repo": "click-configfile",
+    "topics": []
+  },
+  {
+    "owner": "click-contrib",
+    "repo": "click-datetime",
+    "topics": []
+  },
+  {
+    "owner": "click-contrib",
+    "repo": "click-threading",
+    "topics": []
+  },
+  {
+    "owner": "click-contrib",
+    "repo": "click-plugins",
+    "topics": []
+  },
+  {
+    "owner": "click-contrib",
+    "repo": "click-default-group",
+    "topics": []
+  },
+  {
+    "owner": "click-contrib",
+    "repo": "click-aliases",
+    "topics": []
+  }
+]
