@@ -1,0 +1,102 @@
+[
+  {
+    "owner": "mwaskom",
+    "repo": "seaborn",
+    "topics": [
+      "python",
+      "data-visualization",
+      "data-science",
+      "matplotlib",
+      "pandas"
+    ]
+  },
+  {
+    "owner": "bokeh",
+    "repo": "bokeh",
+    "topics": [
+      "bokeh",
+      "python",
+      "interactive-plots",
+      "javascript",
+      "visualization",
+      "plotting",
+      "plots",
+      "data-visualisation",
+      "notebooks",
+      "jupyter",
+      "visualisation",
+      "numfocus"
+    ]
+  },
+  {
+    "owner": "matplotlib",
+    "repo": "matplotlib",
+    "topics": []
+  },
+  {
+    "owner": "altair-viz",
+    "repo": "altair",
+    "topics": []
+  },
+  {
+    "owner": "plotly",
+    "repo": "plotly.py",
+    "topics": [
+      "python",
+      "d3",
+      "plotly",
+      "plotlyjs",
+      "webgl",
+      "dashboard",
+      "visualization",
+      "graph-library",
+      "plotly-dash",
+      "jupyter-notebook",
+      "sparkles",
+      "regl",
+      "declarative",
+      "interactive"
+    ]
+  },
+  {
+    "owner": "bqplot",
+    "repo": "bqplot",
+    "topics": [
+      "visualizations",
+      "jupyter",
+      "ipython"
+    ]
+  },
+  {
+    "owner": "holoviz",
+    "repo": "holoviews",
+    "topics": [
+      "holoviz",
+      "holoviews",
+      "plotting"
+    ]
+  },
+  {
+    "owner": "spotify",
+    "repo": "chartify",
+    "topics": [
+      "bokeh",
+      "visualization",
+      "python",
+      "plotting",
+      "plots",
+      "data-science"
+    ]
+  },
+  {
+    "owner": "has2k1",
+    "repo": "plotnine",
+    "topics": [
+      "plotting",
+      "grammar",
+      "graphics",
+      "python",
+      "data-analysis"
+    ]
+  }
+]
