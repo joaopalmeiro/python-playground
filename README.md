@@ -2,6 +2,10 @@
 
 Some experiments with [Python](https://www.python.org/).
 
+## Development
+
+- `pipenv install --python 3.8 && pipenv shell`
+
 ## Notes
 
 - [readme.so](https://readme.so/) (online editor to create README files).
