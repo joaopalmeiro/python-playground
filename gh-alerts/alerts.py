@@ -1,9 +1,13 @@
 import os
 
+from fastcore.net import HTTP404NotFoundError
 from ghapi.all import GhApi, pages
 
 USER: str = "joaopalmeiro"
 DEFAULT_ENV_VARIABLE: str = "GITHUB_TOKEN"
+
+ENABLE_SYMBOL: str = "🟢"
+DISABLE_SYMBOL: str = "❌"
 
 if __name__ == "__main__":
     api = GhApi(owner=USER, token=os.environ[DEFAULT_ENV_VARIABLE])
@@ -27,5 +31,27 @@ if __name__ == "__main__":
         affiliation="owner",
     ).concat()
 
-    # print(repos)
-    print(f"Number of repositories: {len(repos)}")
+    # 2. Check if vulnerability alerts are enabled.
+
+    enabled = disabled = 0
+    for repo in repos:
+        # `AttrDict`: `dict` subclass that provides access to keys as attributes.
+        # More info: https://fastcore.fast.ai/basics.html#AttrDict
+        name = repo.name
+
+        # _404 Not Found_ if repository is not enabled with vulnerability alerts.
+        # More info: https://docs.github.com/en/rest/reference/repos#check-if-vulnerability-alerts-are-enabled-for-a-repository
+        try:
+            api.repos.check_vulnerability_alerts(repo=name)
+
+            print(f"{ENABLE_SYMBOL} {name}\n")
+            enabled += 1
+        except HTTP404NotFoundError:
+            print(f"{DISABLE_SYMBOL} {name}\n")
+            disabled += 1
+
+    print(
+        f"\nNumber of repositories: {len(repos)}\n"
+        f"{ENABLE_SYMBOL} {enabled} w/ vulnerability alerts enabled\n"
+        f"{DISABLE_SYMBOL} {disabled} w/ vulnerability alerts disabled"
+    )
