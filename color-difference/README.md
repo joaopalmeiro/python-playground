@@ -33,6 +33,9 @@ let color2 = new Color("hsl(50, 100%, 50%)");
 let color3 = new Color("hsl(230, 100%, 50%)");
 let color4 = new Color("hsl(260, 100%, 50%)");
 
+color1.to("srgb");
+color1.to("lab");
+
 color1.deltaE76(color2);
 color3.deltaE76(color4);
 color2.deltaE76(color3);

@@ -17,6 +17,7 @@ def main():
 
     orange_array = np.asarray(orange, dtype=np.uint8)
     orange_lab = color.rgb2lab(orange_array)
+    print(orange_array, orange_lab)
 
     yellow_array = np.asarray(yellow, dtype=np.uint8)
     yellow_lab = color.rgb2lab(yellow_array)
