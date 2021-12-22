@@ -25,3 +25,4 @@ Metadata about different terminals.
   - `-` represents the default value for _undefined_ environment variables.
 - Hyper [themes](https://hyper.is/themes).
 - Terminals or terminal emulators.
+- Warp [issues](https://github.com/warpdotdev/warp/issues).
