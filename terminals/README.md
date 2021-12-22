@@ -24,3 +24,4 @@ Metadata about different terminals.
   - The `OS` column corresponds to the operating system where the script was run.
   - `-` represents the default value for _undefined_ environment variables.
 - Hyper [themes](https://hyper.is/themes).
+- Terminals or terminal emulators.
