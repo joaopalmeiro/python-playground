@@ -9,6 +9,7 @@ Some experiments with [Python](https://www.python.org/).
 ## Notes
 
 - [readme.so](https://readme.so/) (online editor to create README files).
+- [@vercel/ncc](https://github.com/vercel/ncc): compile a Node.js module into a single file with all its dependencies.
 
 `Snippet` **Abstract base class**
 

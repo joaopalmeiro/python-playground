@@ -1,4 +1,5 @@
 import os
+import platform
 
 from pytablewriter import MarkdownTableWriter
 from pytablewriter.typehint import String
@@ -21,16 +22,24 @@ if __name__ == "__main__":
     # - https://pytablewriter.readthedocs.io/en/latest/pages/examples/typehint/python.html#example-type-hint-python
     # - https://pytablewriter.readthedocs.io/en/latest/pages/examples/output/dump/index.html
     writer = MarkdownTableWriter(
-        headers=["Terminal", TERM_VAR, TERM_PROGRAM_VAR, TERM_PROGRAM_VERSION_VAR],
+        headers=[
+            "Terminal",
+            TERM_VAR,
+            TERM_PROGRAM_VAR,
+            TERM_PROGRAM_VERSION_VAR,
+            "OS",
+        ],
         value_matrix=[
             [
                 "[]()",
                 os.getenv(TERM_VAR, DEFAULT_CELL_VALUE),
                 os.getenv(TERM_PROGRAM_VAR, DEFAULT_CELL_VALUE),
                 os.getenv(TERM_PROGRAM_VERSION_VAR, DEFAULT_CELL_VALUE),
+                # More info: https://docs.python.org/3.8/library/platform.html#platform.platform
+                platform.platform(terse=True),
             ]
         ],
-        type_hints=[String, String, String],
+        type_hints=[String, String, String, String, String],
         margin=1,
         flavor="github",
     )
