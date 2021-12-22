@@ -19,4 +19,6 @@ Metadata about different terminals.
 - [is-unicode-supported](https://github.com/sindresorhus/is-unicode-supported).
 - `TERM_PROGRAM`, `TERM_PROGRAM_VERSION`, and `TERM` environment variables.
 - [Support TERM_PROGRAM environment variables](https://github.com/mintty/mintty/issues/776) issue.
-- The `OS` column corresponds to the operating system where the script was run.
+- Table:
+  - The `OS` column corresponds to the operating system where the script was run.
+  - `-` represents the default value for _undefined_ environment variables.
