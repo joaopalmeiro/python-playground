@@ -7,6 +7,7 @@ Metadata about different terminals.
 | [Warp](https://www.warp.dev/)                                            | xterm-256color | WarpTerminal   | -                    | macOS-10.15.7 |
 | [iTerm2](https://iterm2.com/)                                            | xterm-256color | iTerm.app      | 3.4.14               | macOS-10.15.7 |
 | [Terminal (macOS)](https://support.apple.com/guide/terminal/welcome/mac) | xterm-256color | Apple_Terminal | 433                  | macOS-10.15.7 |
+| [Hyper](https://hyper.is/)                                               | xterm-256color | Hyper          | 3.1.4                | macOS-10.15.7 |
 
 ## Development
 
@@ -22,3 +23,4 @@ Metadata about different terminals.
 - Table:
   - The `OS` column corresponds to the operating system where the script was run.
   - `-` represents the default value for _undefined_ environment variables.
+- Hyper [themes](https://hyper.is/themes).
