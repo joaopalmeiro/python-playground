@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 pytablewriter = "*"
+python-rapidjson = "*"
 
 [dev-packages]
 

@@ -22,6 +22,7 @@ Metadata about different terminals.
 - `pipenv install --python 3.8`.
 - `pipenv shell`.
 - Run this script via the desired terminal: `python script.py`.
+- `python cheese.py`.
 
 ## Notes
 
