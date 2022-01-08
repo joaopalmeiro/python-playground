@@ -17,7 +17,7 @@ Metadata about different terminals.
 
 ### Terminal (macOS)
 
-> Screenshot app: [Screenshot (macOS)](https://support.apple.com/en-gb/guide/mac-help/mh26782/10.15/mac/10.15)
+> Screenshot app: Screenshot (macOS)
 
 ![Terminal (macOS)](img/terminal_screenshot_macos.png)
 
