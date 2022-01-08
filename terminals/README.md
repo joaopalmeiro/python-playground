@@ -9,6 +9,14 @@ Metadata about different terminals.
 | [Terminal (macOS)](https://support.apple.com/guide/terminal/welcome/mac) | xterm-256color | Apple_Terminal | 433                  | macOS-10.15.7 |
 | [Hyper](https://hyper.is/)                                               | xterm-256color | Hyper          | 3.1.4                | macOS-10.15.7 |
 
+## Emoji support
+
+### Warp
+
+> Screenshot app: [Screenshot (macOS)](https://support.apple.com/en-gb/guide/mac-help/mh26782/10.15/mac/10.15)
+
+![Warp](img/warp_screenshot_macos.png)
+
 ## Development
 
 - `pipenv install --python 3.8`.
@@ -26,3 +34,4 @@ Metadata about different terminals.
 - Hyper [themes](https://hyper.is/themes).
 - Terminals or terminal emulators.
 - Warp [issues](https://github.com/warpdotdev/warp/issues).
+- [CleanShot X](https://cleanshot.com/) (available via [Setapp](https://setapp.com/apps/cleanshot))
