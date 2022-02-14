@@ -122,3 +122,19 @@ min_ = min(data)
 mx = max(data)
 max_ = max(data)
 ```
+
+---
+
+`Tooling` **Create a Pipenv environment with the `.venv` folder locally and a specific `pip` version**
+
+```bash
+export PIPENV_VENV_IN_PROJECT=1 && \
+export VIRTUALENV_PIP=22.0.2 && \
+export VIRTUALENV_DOWNLOAD=1 && \
+pipenv install --python 3.7 --dev
+```
+
+Note: `VIRTUALENV_DOWNLOAD` may not be necessary. In my case, it was necessary to ensure that Pipenv was using a newer version.
+
+- [virtualenv CLI flags](https://virtualenv.pypa.io/en/latest/cli_interface.html#section-seeder)
+- [GitHub issue](https://github.com/pypa/pipenv/issues/3142#issuecomment-831378235)
