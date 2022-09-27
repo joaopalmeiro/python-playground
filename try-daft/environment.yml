@@ -1,0 +1,16 @@
+name: try-daft
+channels:
+  - conda-forge
+dependencies:
+  # https://anaconda.org/conda-forge/python?version=3.7.12
+  - python=3.7.12
+  # https://anaconda.org/conda-forge/jupyterlab?version=3.2.5
+  - jupyterlab=3.2.5
+  # https://anaconda.org/conda-forge/black-jupyter?version=22.3.0
+  - black-jupyter=22.3.0
+  - pip:
+      - getdaft==0.0.11
+      - Pillow==9.2.0
+      # `ImportError: HTTPFileSystem requires "requests" and "aiohttp" to be installed`:
+      - requests==2.28.1
+      - aiohttp==3.8.3
