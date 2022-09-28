@@ -1,0 +1,11 @@
+name: try-visual-auditor
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7.12
+  - jupyterlab=3.2.5
+  - black-jupyter=22.3.0
+  - pandas=1.3.4
+  - scikit-learn=1.0.2
+  - pip:
+      - visual_auditor==0.1.2
