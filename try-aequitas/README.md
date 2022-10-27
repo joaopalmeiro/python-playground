@@ -11,3 +11,4 @@
 
 - [Repo](https://github.com/dssg/aequitas)
 - `pipenv install nbqa isort`
+- [ColorAide](https://github.com/facelessuser/coloraide) package ([documentation](https://facelessuser.github.io/coloraide/))

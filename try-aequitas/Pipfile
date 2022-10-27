@@ -10,6 +10,7 @@ scipy = "*"
 black = {extras = ["jupyter"], version = "*"}
 nbqa = "*"
 isort = "*"
+coloraide = "*"
 
 [dev-packages]
 
