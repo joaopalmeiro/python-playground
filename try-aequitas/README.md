@@ -18,5 +18,11 @@
   - `conda list`
   - `pip install -e .`
   - `conda list`
+  - `conda env remove --name aequitas-dev`
 - https://conda.io/projects/conda/en/latest/commands/create.html
 - https://conda.io/projects/conda/en/latest/commands/list.html: `conda list --json`
+- `ModuleNotFoundError: No module named 'scipy'`:
+  - https://github.com/dssg/aequitas/blob/0.42.0/src/aequitas/bias.py#L6
+  - https://github.com/dssg/aequitas/blob/0.42.0/requirement/main.txt (`pandas>=0.24.1`)
+  - https://pandas.pydata.org/pandas-docs/version/0.24.1/install.html
+  - https://github.com/pandas-dev/pandas/blob/v0.24.1/doc/source/install.rst#optional-dependencies (`scipy>=0.18.1`)

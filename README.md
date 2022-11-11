@@ -10,6 +10,12 @@ Some experiments with [Python](https://www.python.org/).
 
 - [readme.so](https://readme.so/) (online editor to create README files).
 - [@vercel/ncc](https://github.com/vercel/ncc): compile a Node.js module into a single file with all its dependencies.
+- Check installed packages in Google Colab: `!pip freeze` or `!pip freeze --all` or `!pip list` or `!pip list --format=json` or `!pip list --format=json | python -m json.tool`
+  - https://stackoverflow.com/a/47109764
+  - https://pip.pypa.io/en/stable/cli/pip_freeze/
+  - https://pip.pypa.io/en/stable/cli/pip_list/
+  - https://note.nkmk.me/en/python-pip-list-freeze/
+- Check the Google Colab release notes: _Help_ > _View release notes_
 
 `Snippet` **Abstract base class**
 
