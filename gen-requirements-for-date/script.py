@@ -1,5 +1,6 @@
 import os
 from datetime import timezone
+from operator import itemgetter
 
 import requests
 from dateutil import parser
@@ -30,6 +31,7 @@ if __name__ == "__main__":
     repo = g.get_repo(REF_REPO)
 
     # https://stackoverflow.com/a/2364277
+    # https://docs.python.org/3/library/functions.html#next
     tag = next(tag for tag in repo.get_tags() if tag.name == "v2.4.1")
 
     # https://pygithub.readthedocs.io/en/latest/github_objects/Commit.html
@@ -51,25 +53,52 @@ if __name__ == "__main__":
             "https://raw.githubusercontent.com/altair-viz/altair/v2.4.1/doc/requirements.txt"
         )
 
-        # pkgs = res.text.split()
-        pkgs = ["sphinx"]
+        pkgs = res.text.split()
+        # pkgs = ["sphinx"]
+        # pkgs = ["sphinx_rtd_theme"]
 
     with requests.Session() as s:
+        deps = []
         for pkg in pkgs:
             res = s.get(f"https://pypi.org/pypi/{pkg}/json")
             pkg_data = res.json()
+            # print(pkg_data)
 
             final_versions = [
                 version for version in pkg_data["releases"] if is_final_version(version)
             ]
+            # print(final_versions)
 
+            pairs = []
             for version in final_versions:
                 files = pkg_data["releases"][version]
-                dts = [parser.isoparse(file["upload_time_iso_8601"]) for file in files]
-                min_dt = min(dts)
-                # print(min_dt, repr(min_dt), min_dt.tzinfo)
+                # print(files)
 
-                # print(min_dt < tag_date_tz)
+                # No files: https://pypi.org/project/sphinx-rtd-theme/0.1.0/
+                # https://pypi.org/project/sphinx-rtd-theme/0.1.1/
+                if files:
+                    dts = [
+                        parser.isoparse(file["upload_time_iso_8601"]) for file in files
+                    ]
+                    min_dt = min(dts)
 
-    print(pkgs)
+                    pairs.append((version, min_dt))
+                    # print(min_dt, repr(min_dt), min_dt.tzinfo)
+
+            pairs = sorted(pairs, key=itemgetter(1), reverse=True)
+            max_version = next(pair[0] for pair in pairs if pair[1] <= tag_date_tz)
+            # print(max_version)
+
+            dep = f"{pkg}<={max_version}"
+            print(dep)
+            deps.append(dep)
+
+    # print(pkgs)
     # print(repr(pkgs))
+    # print(deps)
+
+    with open("requirements.txt", "w") as f:
+        f.write(f"# Reference date: {tag_date_tz.strftime('%b %d, %Y')}")
+        f.write("\n" * 2)
+        f.write("\n".join(deps))
+        f.write("\n")
