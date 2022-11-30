@@ -8,6 +8,8 @@ black = "*"
 isort = "*"
 requests = "*"
 rich = "*"
+packaging = "*"
+python-dateutil = "*"
 
 [dev-packages]
 
