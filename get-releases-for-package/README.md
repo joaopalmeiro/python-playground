@@ -9,6 +9,9 @@
 ## References
 
 - https://stackoverflow.com/a/66579111 + https://warehouse.pypa.io/api-reference/json.html
+
+## Notes
+
 - `pipenv install black isort requests rich packaging`
 - `pipenv --rm`
 - `semver` package: https://github.com/python-semver/python-semver
