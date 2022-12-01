@@ -14,4 +14,4 @@
 
 ## Notes
 
-- `pipenv install black isort rich`
+- `pipenv install black isort rich packaging`
