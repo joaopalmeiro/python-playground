@@ -17,6 +17,12 @@ MARKDOWN_PARSERS = [
     # https://github.com/Python-Markdown/markdown
     # https://pypi.org/project/Markdown/
     "Markdown",
+    # https://github.com/trentm/python-markdown2
+    # https://pypi.org/project/markdown2/
+    "markdown2",
+    # https://github.com/executablebooks/markdown-it-py
+    # https://pypi.org/project/markdown-it-py/
+    "markdown-it-py",
     # "six",
     # "alabaster",
     # "Sphinx",
