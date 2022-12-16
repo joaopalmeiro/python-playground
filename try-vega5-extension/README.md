@@ -33,7 +33,7 @@
     - `pip install -e ".[dev,test]"`
     - `jlpm install`
     - `jlpm run build`
-    - `jupyter lab --dev-mode`
+    - `jupyter lab --dev-mode` or `jupyter lab --dev-mode --watch`
     - `jlpm run build:testutils`
     - `jlpm test`
     - `pip install pre-commit`
