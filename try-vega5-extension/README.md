@@ -54,3 +54,76 @@ If you think this flexibility makes sense for this PNG representation, I would a
 - const imageURL = await this._result.view.toImageURL('png');
 + const imageURL = await this._result.view.toImageURL('png', embedOptions.scaleFactor);
 ```
+
+## Snippets
+
+```python
+from IPython.display import display
+
+display(
+    {
+        "application/vnd.vegalite.v4+json": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "description": "A simple bar chart with embedded data.",
+            "data": {
+                "values": [
+                    {"a": "A", "b": 28},
+                    {"a": "B", "b": 55},
+                    {"a": "C", "b": 43},
+                    {"a": "D", "b": 91},
+                    {"a": "E", "b": 81},
+                    {"a": "F", "b": 53},
+                    {"a": "G", "b": 19},
+                    {"a": "H", "b": 87},
+                    {"a": "I", "b": 52},
+                ]
+            },
+            "mark": "bar",
+            "encoding": {
+                "x": {"field": "a", "type": "nominal", "axis": {"labelAngle": 0}},
+                "y": {"field": "b", "type": "quantitative"},
+            },
+        }
+    },
+    raw=True,
+)
+```
+
+```python
+from IPython.display import display
+
+display(
+    {
+        "application/vnd.vegalite.v4+json": {
+            "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+            "description": "A simple bar chart with embedded data.",
+            "data": {
+                "values": [
+                    {"a": "A", "b": 28},
+                    {"a": "B", "b": 55},
+                    {"a": "C", "b": 43},
+                    {"a": "D", "b": 91},
+                    {"a": "E", "b": 81},
+                    {"a": "F", "b": 53},
+                    {"a": "G", "b": 19},
+                    {"a": "H", "b": 87},
+                    {"a": "I", "b": 52},
+                ]
+            },
+            "mark": "bar",
+            "encoding": {
+                "x": {"field": "a", "type": "nominal", "axis": {"labelAngle": 0}},
+                "y": {"field": "b", "type": "quantitative"},
+            },
+        }
+    },
+    metadata={
+        "application/vnd.vegalite.v4+json": {
+            "embed_options": {
+                "scaleFactor": 5,
+            }
+        }
+    },
+    raw=True,
+)
+```
