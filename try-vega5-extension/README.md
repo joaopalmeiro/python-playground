@@ -21,6 +21,25 @@
 ## Notes
 
 - `conda deactivate` + `conda env remove --name try-vega5-extension`
+- Development environment for JupyterLab ([documentation](https://jupyterlab.readthedocs.io/en/latest/developer/contributing.html#setting-up-a-local-development-environment)):
+  - `conda create -c conda-forge -n jlab-dev python=3.8 nodejs pkg-config pango libpng cairo jpeg giflib librsvg glib`
+    - Note: Use Python 3.8 instead of 3.7 because of Flake8.
+  - `conda activate jlab-dev`
+  - `conda env config vars list`
+  - `conda env config vars set PKG_CONFIG_PATH=$CONDA_PREFIX/lib/pkgconfig`
+  - `conda activate jlab-dev`
+  - `conda env config vars list`
+  - From the cloned JupyterLab repo folder:
+    - `pip install -e ".[dev,test]"`
+    - `jlpm install`
+    - `jlpm run build`
+    - `jupyter lab --dev-mode`
+    - `jlpm run build:testutils`
+    - `jlpm test`
+    - `pip install pre-commit`
+    - `pre-commit install`
+    - `pre-commit run`
+  - `conda deactivate` + `conda env remove --name jlab-dev`
 
 ### Issue
 
