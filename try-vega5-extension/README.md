@@ -17,6 +17,7 @@
 - https://vega.github.io/vega/docs/api/view/#view_toImageURL
 - https://vega.github.io/vega-lite/examples/bar.html or https://vega.github.io/vega-lite-v4/examples/bar.html
 - https://github.com/vega/vega-embed
+- https://nbviewer.org/github/joaopalmeiro/python-playground/blob/master/try-vega5-extension/dev.ipynb
 
 ## Notes
 
