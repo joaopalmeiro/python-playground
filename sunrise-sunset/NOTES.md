@@ -8,6 +8,7 @@
 - https://nominatim.openstreetmap.org/search?q=Redondo&format=json&limit=1
 - https://sunrisewhen.com/
 - https://wego.here.com/
+- https://tabuademares.com/pt/lisboa/lisboa/previsao/saida-por-sol
 
 ## Commands
 

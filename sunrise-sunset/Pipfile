@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+suntime = "==1.2.5"
 
 [dev-packages]
 ruff = "==0.1.11"
