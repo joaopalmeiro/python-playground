@@ -1,0 +1,7 @@
+[codespell]
+builtin = clear,rare,informal,usage,code,names,en-GB_to_en-US
+summary =
+count =
+skip = ./.git,./.ruff_cache
+check-filenames =
+check-hidden =

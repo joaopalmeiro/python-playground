@@ -1,0 +1,12 @@
+# https://docs.astral.sh/ruff/settings/#required-version
+required-version = "0.1.11"
+# https://docs.astral.sh/ruff/settings/#target-version
+target-version = "py310"
+
+# https://docs.astral.sh/ruff/settings/#extend-select
+# https://docs.astral.sh/ruff/rules/#isort-i
+extend-select = ["I"]
+
+# https://docs.astral.sh/ruff/settings/#isort-combine-as-imports
+[lint.isort]
+combine-as-imports = true

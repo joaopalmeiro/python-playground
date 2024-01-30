@@ -144,3 +144,29 @@ Note: `VIRTUALENV_DOWNLOAD` may not be necessary. In my case, it was necessary t
 
 - [virtualenv CLI flags](https://virtualenv.pypa.io/en/latest/cli_interface.html#section-seeder)
 - [GitHub issue](https://github.com/pypa/pipenv/issues/3142#issuecomment-831378235)
+
+---
+
+`Snippet` **`.vscode/settings.json` file**
+
+```json
+{
+  "editor.formatOnSave": true,
+
+  "python.formatting.provider": "black",
+
+  "python.linting.enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": ["--ignore=E501,W503"],
+  "python.linting.mypyEnabled": true,
+
+  "python.sortImports.args": ["--atomic"],
+
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  }
+}
+```

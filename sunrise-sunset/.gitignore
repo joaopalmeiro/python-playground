@@ -1,0 +1,4 @@
+.DS_Store
+
+# https://docs.astral.sh/ruff/settings/#cache-dir
+.ruff_cache/
