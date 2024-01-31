@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 suntime = "==1.2.5"
+geocoder = "==1.38.1"
 
 [dev-packages]
 ruff = "==0.1.11"
