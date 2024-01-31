@@ -31,7 +31,7 @@
 - https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.tzutc
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br
 - https://switowski.com/blog/checking-for-true-or-false/:
-  - "To check if a variable is equal to True/False (and you don't have to distinguish between `/`False`and truthy/falsy values), use`if variable`or`if not variable`."
+  - "To check if a variable is equal to True/False (and you don't have to distinguish between `True`/`False` and truthy / falsy values), use `if variable` or `if not variable`."
   - If you want to check that a variable is explicitly True or False (and is not truthy/falsy), use `is` (`if variable is True`).
 - https://open-meteo.com/
 - https://open-meteo.com/en/docs
