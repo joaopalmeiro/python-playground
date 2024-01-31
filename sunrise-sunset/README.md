@@ -31,3 +31,7 @@ pipenv run ruff check --fix --verbose . && pipenv run ruff format --verbose .
 ```bash
 pipenv run python 01.py
 ```
+
+```bash
+pipenv run python 02.py
+```
