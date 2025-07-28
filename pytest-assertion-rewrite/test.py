@@ -1,4 +1,4 @@
-def test_sum():
+def test_calc():
     x = 1
     y = 2
 
