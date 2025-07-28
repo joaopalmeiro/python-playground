@@ -31,6 +31,10 @@ uv pip install -r requirements.txt
 ```
 
 ```bash
+pytest test.py
+```
+
+```bash
 python 01.py
 ```
 

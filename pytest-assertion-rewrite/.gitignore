@@ -1,7 +1,9 @@
+# .pytest_cache/: https://github.com/pytest-dev/pytest/blob/8.4.1/doc/en/reference/reference.rst?plain=1#L1338-L1346
 # .ruff_cache/: https://docs.astral.sh/ruff/settings/#cache-dir
 
 __pycache__/
 .mypy_cache/
+.pytest_cache/
 .ruff_cache/
 .venv/
 
