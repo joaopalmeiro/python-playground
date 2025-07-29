@@ -16,6 +16,7 @@
 - https://www.linkedin.com/posts/daniel-vila-suero-484b6b45_hugging-face-jobs-are-here-run-any-activity-7355612502597992448-1lPa
   - https://huggingface.co/docs/huggingface_hub/guides/jobs
   - https://huggingface.co/uv-scripts
+- https://benmyers.dev/blog/code-snippet-alt-text/
 
 ## Commands
 
