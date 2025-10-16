@@ -16,6 +16,11 @@ Some experiments with [Python](https://www.python.org/).
   - https://pip.pypa.io/en/stable/cli/pip_list/
   - https://note.nkmk.me/en/python-pip-list-freeze/
 - Check the Google Colab release notes: _Help_ > _View release notes_
+- [Pyrefly](https://pyrefly.org/):
+  - https://pyrefly.org/en/docs/error-kinds/
+  - `uvx pyrefly@0.37.0 init --help`
+  - `uvx pyrefly@0.37.0 init` or `uvx pyrefly@0.37.0 init pyrefly.toml`
+  - `uvx pyrefly@0.37.0 check --summarize-errors`
 
 `Snippet` **Abstract base class**
 
