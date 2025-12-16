@@ -21,6 +21,12 @@ Some experiments with [Python](https://www.python.org/).
   - `uvx pyrefly@0.37.0 init --help`
   - `uvx pyrefly@0.37.0 init` or `uvx pyrefly@0.37.0 init pyrefly.toml`
   - `uvx pyrefly@0.37.0 check --summarize-errors`
+- [jsonref](https://github.com/gazpachoking/jsonref):
+  - https://github.com/simonw/llm/issues/849#issuecomment-2978051802: `replaced = jsonref.replace_refs(schema, lazy_load=False)` + `replaced.pop("$defs")`
+  - https://github.com/mathpn/llm-docsmith/issues/4
+  - https://github.com/pydantic/pydantic/issues/889
+  - https://pypi.org/project/jsonref/
+  - https://ai.google.dev/gemini-api/docs/structured-output?example=recipe#json_schema_support
 
 `Snippet` **Abstract base class**
 
