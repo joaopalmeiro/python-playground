@@ -1,0 +1,5 @@
+humanize==4.15.0
+mypy[faster-cache]==1.16.1
+PyMuPDF==1.26.7
+pypdf[image]==6.6.0
+ruff==0.14.11
