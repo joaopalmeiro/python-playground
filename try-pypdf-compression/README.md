@@ -37,6 +37,10 @@ python compress-pymupdf.py
 ```
 
 ```bash
+python convert-img.py
+```
+
+```bash
 mypy
 ```
 
