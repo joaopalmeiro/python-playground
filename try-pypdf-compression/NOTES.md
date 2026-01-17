@@ -19,6 +19,8 @@
   - https://pymupdf.readthedocs.io/en/latest/recipes-images.html#how-to-make-images-from-document-pages
   - https://pymupdf.readthedocs.io/en/latest/page.html#Page.get_pixmap
 - https://github.com/mapbox/pixelmatch
+- https://artifex.com/licensing
+  - https://github.com/browser-use/browser-use/issues/2610
 
 ## Commands
 
