@@ -27,6 +27,7 @@ Some experiments with [Python](https://www.python.org/).
   - https://github.com/pydantic/pydantic/issues/889
   - https://pypi.org/project/jsonref/
   - https://ai.google.dev/gemini-api/docs/structured-output?example=recipe#json_schema_support
+- Install a specific version of PDM using uv: `uv tool install pdm==2.22.2 && pdm --version`
 
 `Snippet` **Abstract base class**
 
