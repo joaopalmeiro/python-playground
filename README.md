@@ -29,6 +29,7 @@ Some experiments with [Python](https://www.python.org/).
   - https://ai.google.dev/gemini-api/docs/structured-output?example=recipe#json_schema_support
 - Install a specific version of PDM using uv: `uv tool install pdm==2.22.2 && pdm --version`
 - https://github.com/lucasgelfond/zerobrew
+- https://github.com/github/gitignore/blob/53fee13f20a05efc93ef4edcad0c62863520e268/Global/LibreOffice.gitignore: `.~lock.*#`
 
 ### Install any version of PDM via Homebrew
 
