@@ -28,6 +28,35 @@ Some experiments with [Python](https://www.python.org/).
   - https://pypi.org/project/jsonref/
   - https://ai.google.dev/gemini-api/docs/structured-output?example=recipe#json_schema_support
 - Install a specific version of PDM using uv: `uv tool install pdm==2.22.2 && pdm --version`
+- https://github.com/lucasgelfond/zerobrew
+
+### Install any version of PDM via Homebrew
+
+```bash
+brew update
+```
+
+```bash
+brew tap homebrew/core --force
+```
+
+```bash
+brew tap-new joao-palmeiro/local-formulas
+```
+
+```bash
+brew extract --version=2.26.0 pdm joao-palmeiro/local-formulas
+```
+
+```bash
+brew install pdm@2.26.0 && pdm self add keyring
+```
+
+```bash
+brew uninstall pdm@2.26.0
+```
+
+## Snippets
 
 `Snippet` **Abstract base class**
 
