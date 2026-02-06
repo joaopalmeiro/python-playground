@@ -30,6 +30,7 @@ Some experiments with [Python](https://www.python.org/).
 - Install a specific version of PDM using uv: `uv tool install pdm==2.22.2 && pdm --version`
 - https://github.com/lucasgelfond/zerobrew
 - https://github.com/github/gitignore/blob/53fee13f20a05efc93ef4edcad0c62863520e268/Global/LibreOffice.gitignore: `.~lock.*#`
+- https://docs.astral.sh/ty/reference/typing-faq/#does-ty-support-mypy-plugins: "That said, we are considering adding support for popular third-party libraries like pydantic, SQLAlchemy, attrs, or django directly into ty."
 
 ### Install any version of PDM via Homebrew
 
