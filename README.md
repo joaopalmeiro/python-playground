@@ -57,6 +57,10 @@ brew install pdm@2.26.0 && pdm self add keyring
 ```
 
 ```bash
+pdm --version
+```
+
+```bash
 brew uninstall pdm@2.26.0
 ```
 
