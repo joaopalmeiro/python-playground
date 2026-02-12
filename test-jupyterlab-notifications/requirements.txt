@@ -1,0 +1,2 @@
+jupyterlab==4.3.2
+ruff==0.14.11
