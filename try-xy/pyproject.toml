@@ -1,0 +1,10 @@
+[project]
+name = "try-xy"
+version = "0.0.0"
+requires-python = ">=3.11.15"
+dependencies = [
+    "jupyterlab==4.6.2",
+    "mypy==1.20.1",
+    "ruff==0.15.11",
+    "xy==0.0.3",
+]
