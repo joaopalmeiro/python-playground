@@ -7,3 +7,7 @@
 - https://github.com/reflex-dev/xy/blob/d5f2d9c15a9cc3f4612caf722c1ff5492248e6a6/examples/fastapi/charts.py#L52
 - https://github.com/reflex-dev/xy/blob/d5f2d9c15a9cc3f4612caf722c1ff5492248e6a6/spec/design-dossier.md
   - `Scatter`: `direct instanced → no Tier 1 (decimating unordered points misleads) → density pyramid → out-of-core tiles`
+- Java package naming:
+  - https://docs.oracle.com/javase/tutorial/java/package/namingpkgs.html
+  - https://www.jetbrains.com/help/inspectopedia/PackageNamingConvention.html
+  - https://destan.dev/blog/tech/java-multi-world-package-naming.html
