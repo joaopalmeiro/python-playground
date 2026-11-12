@@ -2,9 +2,9 @@ import time
 
 import faiss
 import numpy as np
+from faiss.contrib.e_means import NumpyEmeans
 from sklearn.datasets import make_blobs
 from sklearn.metrics import adjusted_rand_score
-from faiss.contrib.e_means import NumpyEmeans
 
 N_INSTANCES = 10_000_000
 N_FEATURES = 2
